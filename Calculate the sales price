@@ -1,0 +1,17 @@
+def main():
+    original_price = float(input('Enter the regular price: $'))
+    rate = float(input('Enter the discount rate: '))
+
+    # Calculate the discount amount and final price
+    discount_amount = original_price * (rate / 100)
+    final_price = original_price - discount_amount
+
+    print(f'Regular Price: ${original_price:.2f}')
+    print(f'Discount Amount: ${discount_amount:.2f}')
+    print(f'Final Price: ${final_price:.2f}')
+
+    # Return the calculated values
+    return original_price, discount_amount, final_price
+
+if __name__ == '__main__':
+    main()
