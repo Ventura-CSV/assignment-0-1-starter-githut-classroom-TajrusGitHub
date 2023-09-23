@@ -1,0 +1,21 @@
+import random
+
+def main():
+    number1 = random.randint(0, 100)
+    number2 = random.randint(0, 100)
+    number3 = random.randint(0, 100)
+    
+    # Find the smallest value among the three
+    min_value = min(number1, number2, number3)
+
+    ########################################
+    # Do not delete the return statement
+    ########################################
+    return number1, number2, number3, min_value
+
+if __name__ == '__main__':
+    # Call the main function
+    result = main()
+    # Print the results
+    print("Generated numbers:", result[:3])
+    print("Smallest number:", result[3])
