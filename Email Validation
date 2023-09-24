@@ -1,0 +1,21 @@
+def validate_email(email):
+    # Check if "@" and "." are present
+    return "@" in email and "." in email
+
+def main():
+    email = input('tajrusjr1@gmail.compythin: ')
+    
+    # Validate the email
+    result = validate_email(email)
+    
+    # Print the result
+    if result:
+        print("Valid email")
+    else:
+        print("Invalid email")
+
+    # Return the result
+    return result
+
+if __name__ == '__main__':
+    main()
