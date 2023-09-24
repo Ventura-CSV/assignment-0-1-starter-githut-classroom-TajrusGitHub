@@ -1,0 +1,23 @@
+def main():
+    num1 = int(input('Enter the first number: 14'))
+    num2 = int(input('Enter the second number: 25'))
+    num3 = int(input('Enter the third number: 35'))
+
+    # Sort the numbers in ascending order
+    sorted_numbers = sorted([num1, num2, num3])
+    minval = sorted_numbers[0]  # Minimum value
+    median = sorted_numbers[1]   # Median value
+    maxval = sorted_numbers[2]   # Maximum value
+
+    ########################################
+    # Do not delete the return statement
+    ########################################
+    return minval, median, maxval
+
+if __name__ == '__main__':
+    # Call the main function
+    minval, median, maxval = main()
+    # Print the results
+    print("Minimum value:", minval)
+    print("Median value:", median)
+    print("Maximum value:", maxval)
