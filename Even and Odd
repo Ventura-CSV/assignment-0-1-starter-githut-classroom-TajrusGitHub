@@ -1,0 +1,15 @@
+def main():
+    number = 3  # Number 3
+
+    if number % 2 == 0:
+        result = False  # Even number
+        print(f'The value {number} is an even number')
+    else:
+        result = True  # Odd number
+        print(f'The value {number} is an odd number')
+
+    return result
+
+
+if __name__ == '__main__':
+    main()
