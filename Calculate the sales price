@@ -1,6 +1,6 @@
 def main():
-    original_price = float(input('Enter the regular price: $'))
-    rate = float(input('Enter the discount rate: '))
+    original_price = float(input('Enter the regular price: $400'))
+    rate = float(input('Enter the discount rate: 60'))
 
     # Calculate the discount amount and final price
     discount_amount = original_price * (rate / 100)
